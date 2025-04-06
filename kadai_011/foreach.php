@@ -13,7 +13,7 @@
        $key_translation=['name'=>"名前",'price'=>"値段",'production area'=>'産地'];
        foreach ($personal_data as $key=>$value) {
            $japanese_key=$key_translation[$key];
-           echo "{$japanese_key}={$value}<br>";
+           echo "{$japanese_key}:{$value}<br>";
        }
        ?>
    </p>
