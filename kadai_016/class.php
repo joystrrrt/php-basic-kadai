@@ -19,6 +19,7 @@
   }
     $food=new Food('potato',250);
     print_r($food);
+    echo'<br>';
 
     class Animal{
       private $name;
@@ -32,7 +33,8 @@
   }
     $animal=new Animal('dog',60,5000);
     print_r($animal);
-
+    
+    echo'<br>';
     $food->show_price='250';
     echo $food->show_price.'<br>';
 
