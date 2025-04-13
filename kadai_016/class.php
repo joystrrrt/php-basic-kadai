@@ -9,9 +9,16 @@
 <body>
    <p>
     <?php
+    //クラスを定義する
     class Food{
+      //プロパティを定義する
       private $name;
       private $price;
+      //メソッドを定義する
+      public function show_price(string $price){
+        $this->price=$price;
+      }
+      //コンストラクタを定義する
       public function __construct(string $name, int $price) {
         $this->name=$name;
         $this->price=$price;
@@ -25,6 +32,9 @@
       private $name;
       private $height;
       private $weight;
+      public function show_height(string $height){
+        $this->height=$height;
+      }
       public function __construct(string $name, int $height,string $weight) {
         $this->name=$name;
         $this->height=$height;
